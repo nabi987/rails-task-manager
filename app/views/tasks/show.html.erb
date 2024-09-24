@@ -3,9 +3,9 @@
 <p><%= @task.details %></p>
 
 <% if @task.completed == true %>
-  <p><input type="checkbox">This task is completed</p>
+  <p><input type="checkbox" checked />This task is completed</p>
 <% else %>
-  <p><input type="checkbox">This task is not completed yet</p>
+  <p><input type="checkbox"/>This task is not completed yet</p>
 <% end %>
 
 <%= link_to "Edit task", edit_path %>
